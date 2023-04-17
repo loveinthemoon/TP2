@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de Kimberly Mongelat</h1>
+    <h4>Trabajo Práctico N°2</h4>
+<form action="envio.php" method="post" target="_blank">
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" size="tamaño"
+    name="nombre" placeholder="escribe aquí tu usuario" maxlength="12" minlength="4" required>
+    <small>Este campo es obligatorio!</small>
+    <br>
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="password" size="tamaño"
+    name="password" placeholder="escribe aquí tu contraseña" required>
+    <small>Este campo es obligatorio!</small>
+    <br>
+    <input type="checkbox" name="condiciones" id="condiciones" required> ¿Está de acuerdo con las condiciones del contrato?
+    <br>
+    <input type="radio" name="lenguajes" value="html"> HTML
+    <input type="radio" name="lenguajes" value="css"> CSS
+    <input type="radio" name="lenguajes" value="javascript"> JAVASCRIPT
+    <input type="radio" name="lenguajes" value="python"> PYTHON
+    <br>
+    <label for="archivo">subí tu currículum:</label>
+    <input type="file" id="archivo" size="tamaño"
+    name="archivo" value="file">
+    <br>
+    <label for="opinión">agrega tu opinión</label>
+    <textarea type="file" id="opinión" size="tamaño"
+    name="opinión" placeholder="escribe tu opinión" rows="10" cols="50"></textarea>
+    <br>
+    <label for="País">Selecciona tu país:</label>
+    <select name="país" id="país">
+        <optgroup label="América">
+        <option value="Argentina">Argentina</option>
+        <option value="Costa Rica">Costa Rica</option>
+        <option value="Uruguay" selected="selected">Uruguay</option>
+        </optgroup>
+        <optgroup label="Europa">
+            <option value="España">España</option>
+            <option value="Francia">Francia</option>
+        </optgroup>
+    </select>
+     <br>
+     <label for="archivo">Fecha de nacimiento:</label>
+     <input type="date" id="nacimiento" name="nacimiento" max="2004-12-31">
+     <br>
+    <label for="archivo">Fecha de ingreso laboral:</label>
+    <input type="date" id="Fecha" name="Fecha" max="2023-04-13">
+    <br>
+    <input type="submit" value="enviar tus datos">
+    <input type="reset"  value="resetear tus datos">
+    <br>
+    <input type="button" onclick="alert(Hola)" value="saludando">
+   
+</form>
+
+
+
+
+
+
+    
+</body>
+</html>
